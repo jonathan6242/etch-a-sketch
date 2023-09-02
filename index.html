@@ -8,6 +8,46 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  Etch a Sketch
+  <h1 class="title">
+    Etch A Sketch
+  </h1>
+  <div class="container">
+    <div class="sidebar">
+      <div class="color__picker--wrapper">
+        <input type="color" id="color" class="color__picker" oninput="changeColor(event)">
+        <label class="color__picker--title">
+          Pen Color
+        </label>
+      </div>
+      <button class="btn btn__outline mode" onclick="toggleMode(event, 'grabber')">
+        Color Grabber
+      </button>
+      <button class="btn btn__outline mode" onclick="toggleMode(event, 'rainbow')">
+        Rainbow Mode
+      </button>
+      <button class="btn btn__outline mode" onclick="toggleMode(event, 'eraser')">
+        Toggle Eraser
+      </button>
+      <button class="btn btn__outline mode" onclick="toggleMode(event, 'darken')">
+        Toggle Darken
+      </button>
+      <button class="btn btn__outline mode" onclick="toggleMode(event, 'lighten')">
+        Toggle Lighten
+      </button>
+      <button class="btn btn__outline" onclick="toggleGridLines(event)">
+        Toggle Grid Lines
+      </button>
+      <button id="resize" class="btn" onclick="resize()">
+        Resize Grid
+      </button>
+      <button id="clear" class="btn" onclick="clearGrid()">
+        Clear
+      </button>
+    </div>
+
+    <div class="grid">
+     
+    </div>
+  </div>
 </body>
 </html>
