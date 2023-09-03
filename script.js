@@ -53,6 +53,7 @@ function generateGrid(gridSize) {
   }
 
   grid.style.gridTemplateColumns = `repeat(${gridSize}, minmax(0, 1fr))`;
+  grid.style.gridTemplateRows = `repeat(${gridSize}, minmax(0, 1fr))`;
 
   grid.innerHTML = "";
   for (let i = 0; i < gridSize * gridSize; i++) {
@@ -67,6 +68,7 @@ function generateGrid(gridSize) {
 
 function resize() {
   const newSize = prompt("Enter grid size:");
+  grid.innerHTML = "";
   generateGrid(newSize);
 }
 
