@@ -9,8 +9,6 @@ let currentColor = "#000";
 
 function draw(e) {
   if (e.buttons === 1 || e.buttons === 3 || window.innerWidth < 480) {
-    // alert(currentMode);
-    // alert(e.target.style.backgroundColor);
     switch (currentMode) {
       case "grabber":
         break;
