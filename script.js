@@ -64,6 +64,7 @@ function generateGrid(gridSize) {
     box.addEventListener("mousedown", draw);
     box.addEventListener("touchstart", draw);
     box.addEventListener("touchend", draw);
+    box.addEventListener("touchmove", draw);
     grid.appendChild(box);
   }
 }
