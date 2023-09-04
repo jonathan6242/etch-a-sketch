@@ -62,6 +62,7 @@ function generateGrid(gridSize) {
     box.style.backgroundColor = "#fff";
     box.addEventListener("mouseenter", draw);
     box.addEventListener("mousedown", draw);
+    box.addEventListener("touchstart", draw);
     grid.appendChild(box);
   }
 }
