@@ -10,6 +10,7 @@ let currentColor = "#000";
 function draw(e) {
   alert(e.buttons);
   if (e.buttons === 1 || e.buttons === 3 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    alert(123);
     switch (currentMode) {
       case "grabber":
         break;
